@@ -11,19 +11,20 @@ const Grandpa = () => {
     const [house, sethouse] = useState(10);
     const ornaments= 'Dimond ring';
 
-    const handleBuyAhouse = () => {
+/*     const handleBuyAhouse = () => {
         const newhouse = house + 1;
         sethouse(newhouse);
-    }
+    } */
 
 
 
     return (
 
-      <ringContext.Provider value={[house, ornaments]}>
+      <ringContext.Provider value={[house, ornaments, sethouse]}>
              <div className='grandpa' >
             <h4>grandpa</h4>
-            <button onClick={handleBuyAhouse}>Buy A house</button>
+            <button onClick={()=>sethouse(house+1)}>Buy A house</button>
+           
 
 
             <div style={{ display: 'flex' }}>
