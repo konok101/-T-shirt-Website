@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { createContext, useState } from 'react';
 import Aunty from '../Aunty/Aunty';
 import Father from '../Father/Father'
 import Uncle from '../Uncle/Uncle';
 import './Grandpa.css'
+
+export const ringContext =createContext('Damond')
 
 const Grandpa = () => {
 
@@ -18,7 +20,8 @@ const Grandpa = () => {
 
     return (
 
-        <div className='grandpa' >
+      <ringContext.Provider value='ALUR ring'>
+             <div className='grandpa' >
             <h4>grandpa</h4>
             <button onClick={handleBuyAhouse}>Buy A house</button>
 
@@ -30,6 +33,7 @@ const Grandpa = () => {
             </div>
 
         </div>
+      </ringContext.Provider>
     );
 };
 
