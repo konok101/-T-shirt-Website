@@ -4,13 +4,13 @@ import Myself from '../Grandpa/Myself/Myself';
 import Sister from '../Sister/Sister';
 import './Father.css'
 
-const Father = ({ house, ornaments }) => {
+const Father = ({ house,  }) => {
     return (
         <div>
             <h1>father</h1>
             <p>House: {house}</p>
             <div className="father">
-                <Myself house={house} ornaments={ornaments}></Myself>
+                <Myself house={house}  ></Myself>
                 <Brother Bhouse={house}></Brother>
                 <Sister shouse={house}></Sister>
             </div>

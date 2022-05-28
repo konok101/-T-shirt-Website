@@ -4,7 +4,7 @@ import Father from '../Father/Father'
 import Uncle from '../Uncle/Uncle';
 import './Grandpa.css'
 
-export const ringContext =createContext('Damond')
+export const ringContext =createContext()
 
 const Grandpa = () => {
 
@@ -20,16 +20,16 @@ const Grandpa = () => {
 
     return (
 
-      <ringContext.Provider value='ALUR ring'>
+      <ringContext.Provider value={ house}>
              <div className='grandpa' >
             <h4>grandpa</h4>
             <button onClick={handleBuyAhouse}>Buy A house</button>
 
 
             <div style={{ display: 'flex' }}>
-                <Father house={house} ornaments={ornaments}></Father>
-                <Uncle house={house}></Uncle>
-                <Aunty hous={house}></Aunty>
+                <Father></Father>
+                <Uncle ></Uncle>
+                <Aunty ></Aunty>
             </div>
 
         </div>
