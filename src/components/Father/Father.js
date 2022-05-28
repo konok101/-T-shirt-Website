@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Brother from '../Brother/Brother';
+import { ringContext } from '../Grandpa/Grandpa';
 import Myself from '../Grandpa/Myself/Myself';
 import Sister from '../Sister/Sister';
 import './Father.css'
 
-const Father = ({ house,  }) => {
+const Father = () => {
+    const [house, ornaments]= useContext(ringContext);
     return (
         <div>
             <h1>father</h1>

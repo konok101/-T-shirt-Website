@@ -3,11 +3,12 @@ import { ringContext } from '../Grandpa/Grandpa';
 
 const Brother = ({Bhouse}) => {
 
-    const brotherRing= useContext(ringContext);
+    const [house, ornaments]= useContext(ringContext);
     return (
         <div>
             <h4>brother</h4>
-            <p>{ brotherRing}</p>
+            <p>{house}</p>
+            <h1>{ornaments}</h1>
         </div>
     );
 };

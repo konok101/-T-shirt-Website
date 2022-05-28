@@ -4,11 +4,11 @@ import { ringContext } from '../Grandpa/Grandpa';
  
 
 const Sister = ({shouse}) => {
-    const ringAlu= useContext(ringContext);
+    const [house, ornaments]= useContext(ringContext);
     return (
         <div>
             <h1>Sister</h1>
-            <p>{ ringAlu}</p>
+            <p>{ornaments}</p>
         </div>
     );
 };

@@ -20,7 +20,7 @@ const Grandpa = () => {
 
     return (
 
-      <ringContext.Provider value={ house}>
+      <ringContext.Provider value={[house, ornaments]}>
              <div className='grandpa' >
             <h4>grandpa</h4>
             <button onClick={handleBuyAhouse}>Buy A house</button>
